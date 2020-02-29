@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  descripcion: MyString
+  image_url: MyString
+  fecha: 2020-02-28
+
+two:
+  nombre: MyString
+  descripcion: MyString
+  image_url: MyString
+  fecha: 2020-02-28
