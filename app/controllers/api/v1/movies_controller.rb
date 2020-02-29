@@ -10,8 +10,8 @@ class Api::V1::MoviesController < ApplicationController
 
   # GET /movies/1
   def show
-    render :show
-    # render json: @movie.to_json(only: [:id, :nombre, :descripcion])
+    # render :show
+    render json: @movie.to_json(only: [:id, :nombre, :descripcion])
   end
 
   # POST /movies
@@ -47,6 +47,6 @@ class Api::V1::MoviesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def movie_params
-      params.require(:movie).permit(:nombre, :descripcion, :image_url, :fch_ini, :fch_fin)
+      params.require(:movie).permit!
     end
 end
